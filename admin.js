@@ -1,7 +1,14 @@
+function login() {
+    var password = document.getElementById("password").value;
 
-function login(){
-  alert("Login connected to Firebase (configure firebase.js)");
+    if (password === "admin123") {
+        alert("Login successful");
+        window.location.href = "upload.html";
+    } else {
+        alert("Wrong password");
+    }
 }
-function upload(){
-  alert("Upload connected to Firebase Storage (configure firebase.js)");
+
+function upload() {
+    alert("To upload notes, open GitHub → student-notes-portal → Add file → Upload files");
 }
